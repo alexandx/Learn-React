@@ -1,8 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+var React = require('react');
+var ReactDOM = require('react-dom');
+var PropTypes = require('prop-types');
+require('./index.css');
+var App = require('./components/app');
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+ReactDOM.render(
+  <App/>,
+  document.getElementById('app')
+);
